@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viktorīna par algebru - 12. klase</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .quiz-container { width: 80%; margin: 20px auto; }
+        .question { margin-bottom: 10px; }
+        .answers label { display: block; margin: 5px 0; }
+        .submit-btn { background-color: #4CAF50; color: white; padding: 10px; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Viktorīna par algebru</h1>
+    </header>
+
+    <div class="quiz-container">
+        <form id="quizForm">
+           
+            <div class="question" data-question="2">
+                <p>2. Kāda ir kvadrātvienādojuma x² - 4x + 4 = 0 sakne?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q2" value="0"> x = 2 vai x = -2</label>
+                    <label><input type="radio" name="q2" value="1"> x = 2</label>
+                    <label><input type="radio" name="q2" value="0"> x = -4</label>
+                    <label><input type="radio" name="q2" value="0"> x = 4</label>
+                </div>
+            </div>
+            
+            
+
+            <button type="button" class="submit-btn" onclick="submitQuiz()">Iesniegt atbildi</button>
+        </form>
+    </div>
+
+    <script>
+        function submitQuiz() {
+            const form = document.getElementById("quizForm");
+            const formData = new FormData(form);
+            let score = 0;
+
+            
+            formData.forEach(value => {
+                score += parseInt(value);
+            });
+
+            
+            localStorage.setItem('score', score);
+
+            
+            window.location.href = "result.html";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viktorīna par varbutibu - 12. klase</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .quiz-container { width: 80%; margin: 20px auto; }
+        .question { margin-bottom: 10px; }
+        .answers label { display: block; margin: 5px 0; }
+        .submit-btn { background-color: #4CAF50; color: white; padding: 10px; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Viktorīna par varbutibu</h1>
+    </header>
+
+    <div class="quiz-container">
+        <form id="quizForm">
+            
+            <div class="question" data-question="3">
+                <p>3. Ja monēta tiek mesta divreiz, kāda ir varbūtība, ka abi metieni būs "galvas"?</p>
+                <div class="answers">
+                    <label><input type="radio" name="q3" value="0"> 1</label>
+                    <label><input type="radio" name="q3" value="0"> 1/4</label>
+                    <label><input type="radio" name="q3" value="1"> 1/2</label>
+                    <label><input type="radio" name="q3" value="0"> 3/4</label>
+                </div>
+            </div>
+            
+            
+
+            <button type="button" class="submit-btn" onclick="submitQuiz()">Iesniegt atbildi</button>
+        </form>
+    </div>
+
+    <script>
+        function submitQuiz() {
+            const form = document.getElementById("quizForm");
+            const formData = new FormData(form);
+            let score = 0;
+
+            formData.forEach(value => {
+                score += parseInt(value);
+            });
+
+            
+            localStorage.setItem('score', score);
+
+            
+            window.location.href = "result.html";
+        }
+    </script>
+</body>
+</html>

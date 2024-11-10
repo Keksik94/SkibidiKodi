@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezultāts</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        .score { font-size: 2em; color: #4CAF50; }
+    </style>
+</head>
+<body>
+    <h1>Jūsu rezultāts</h1>
+    <div class="score" id="score"></div>
+
+    <script>
+        
+        const score = localStorage.getItem('score');
+
+        
+        document.getElementById('score').innerText = "Jūsu rezultāts: " + score + " punkti";
+    </script>
+
+    <footer>
+        <a href="hoh.html">Atgriezties uz galveno lapu</a>
+    </footer>
+</body>
+</html>

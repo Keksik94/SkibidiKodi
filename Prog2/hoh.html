@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemātikas Eksāmena Sagatavošanās</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+        }
+        .topics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .topic {
+            flex: 1 1 200px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-radius: 8px;
+        }
+        .topic h3 {
+            margin-top: 0;
+            color: #4CAF50;
+        }
+        .topic button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .topic button:hover {
+            background-color: #45a049;
+        }
+        .faq .question {
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .faq h4 {
+            color: #4CAF50;
+        }
+        .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .contact-form h2 {
+            color: #4CAF50;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Matemātikas Eksāmena Sagatavošanās</h1>
+        <p>Noderīgi resursi un padomi veiksmīgai eksāmena nokārtošanai</p>
+    </header>
+
+   
+    <nav>
+        <a href="#topics">Tēmas</a>
+        <a href="#faq">Bieži Uzdotie Jautājumi</a>
+        <a href="#contact">Sazināties</a>
+    </nav>
+
+    
+    <div class="container" id="topics">
+        <h2>Galvenās Tēmas</h2>
+        <div class="topics">
+            <div class="topic">
+                <h3>Algebra</h3>
+                <p>Algebras pamati, vienādojumi un nevienādības, vienādojumu sistēmas.</p>
+                <button onclick="location.href='algebra.html'">Skatīt tēmu</button>
+            </div>
+            <div class="topic">
+                <h3>Ģeometrija</h3>
+                <p>Ģeometrijas teorēmas, darbs ar trijstūriem, daudzstūriem un apļiem.</p>
+                <button onclick="location.href='geometrija.html'">Skatīt tēmu</button>
+            </div>
+            <div class="topic">
+                <h3>Trigonometrija</h3>
+                <p>Trigonometrijas funkcijas, formulas un vienādojumi, leņķu risinājumi.</p>
+                <button onclick="location.href='trigonometrija.html'">Skatīt tēmu</button>
+            </div>
+            <div class="topic">
+                <h3>Varbūtība un Statistika</h3>
+                <p>Varbūtības teorijas pamati, statistiskā analīze un darbs ar datiem.</p>
+                <button onclick="location.href='varbutiba.html'">Skatīt tēmu</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container" id="faq">
+        <h2>Bieži Uzdotie Jautājumi</h2>
+        <div class="faq">
+            <div class="question">
+                <h4>Kā pareizi sadalīt laiku eksāmenā?</h4>
+                <p>Sāciet ar vienkāršiem uzdevumiem, pēc tam pārejiet uz sarežģītākiem, vērojiet laiku un nevelciet uz viena uzdevuma pārāk ilgi.</p>
+            </div>
+            <div class="question">
+                <h4>Ko darīt, ja nesaprotu uzdevumu?</h4>
+                <p>Mēģiniet analizēt uzdevuma nosacījumus, izcelt svarīgos datus un sasaistīt tos ar tēmu. Ja rodas grūtības, pārejiet uz nākamo uzdevumu.</p>
+            </div>
+            <div class="question">
+                <h4>Kā gatavoties pēdējās dienās pirms eksāmena?</h4>
+                <p>Atkārtojiet svarīgākās formulas un uzdevumu risināšanas metodes, veiciet vairākus izmēģinājuma testus.</p>
+            </div>
+            <div class="question">
+                <h4>Kur var atrast uzdevumu piemērus?</h4>
+                <p>Iesakām izmantot mācību grāmatas un iepriekšējo gadu pārbaudes uzdevumus.</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="container" id="contact">
+        <div class="contact-form">
+            <h2>Sazinieties ar mums</h2>
+            <p>Ja jums ir jautājumi vai nepieciešama palīdzība, sazinieties ar mums:</p>
+            <form action="#">
+                <label for="name">Vārds:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-pasts:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Ziņojums:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Nosūtīt</button>
+            </form>
+        </div>
+    </div>
+    <div class="container" id="scoreboard">
+        <h2>Jūsu rezultāts</h2>
+        <p id="totalScore">Kopā punkti: 0</p>
+    
+        <h2>Līderu tabula</h2>
+        <table border="1" id="leaderboard">
+            <thead>
+                <tr>
+                    <th>Vārds</th>
+                    <th>Punkti</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    
+        <form id="leaderForm" onsubmit="addToLeaderboard(event)">
+            <label for="name">Ievadiet savu vārdu:</label>
+            <input type="text" id="name" required>
+            <button type="submit">Saglabāt rezultātu</button>
+        </form>
+    </div>
+    
+    <script>
+       
+        document.getElementById("totalScore").innerText = "Kopā punkti: " + (localStorage.getItem('totalScore') || 0);
+    
+        
+        function addToLeaderboard(event) {
+            event.preventDefault();
+            const name = document.getElementById("name").value;
+            const score = localStorage.getItem('totalScore') || 0;
+    
+            const leaderboard = JSON.parse(localStorage.getItem('leaderboard')) || [];
+            leaderboard.push({ name, score });
+            leaderboard.sort((a, b) => b.score - a.score);
+            leaderboard.splice(10); 
+    
+            localStorage.setItem('leaderboard', JSON.stringify(leaderboard));
+            displayLeaderboard();
+            document.getElementById("name").value = '';
+        }
+    
+       
+        function displayLeaderboard() {
+            const leaderboard = JSON.parse(localStorage.getItem('leaderboard')) || [];
+            const tbody = document.querySelector("#leaderboard tbody");
+            tbody.innerHTML = leaderboard.map(item => `
+                <tr><td>${item.name}</td><td>${item.score}</td></tr>
+            `).join('');
+        }
+    
+        displayLeaderboard();
+    </script>
+    
+    <footer>
+        <p>&copy; 2023 Matemātikas Eksāmena Sagatavošanās. Visas tiesības aizsargātas.</p>
+    </footer>
+    
+</body>
+</html>
