@@ -1,2 +1,2 @@
 # SkibidiKodi
-SkibidiKosi
+SkibidiKodi
